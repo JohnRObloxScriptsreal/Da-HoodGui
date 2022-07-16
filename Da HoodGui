@@ -1,0 +1,242 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local flyButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local NoClip = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local HeadlessButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+Frame.Position = UDim2.new(0.519374073, 0, 0.302325577, 0)
+Frame.Size = UDim2.new(0, 528, 0, 323)
+
+UICorner.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+TextLabel.BorderColor3 = Color3.fromRGB(91, 91, 91)
+TextLabel.Position = UDim2.new(0.078328982, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Ksk's Da Hood gui"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 30.000
+
+flyButton.Name = "flyButton"
+flyButton.Parent = Frame
+flyButton.BackgroundColor3 = Color3.fromRGB(109, 109, 109)
+flyButton.Position = UDim2.new(0.694007635, 0, 0.230205014, 0)
+flyButton.Size = UDim2.new(0, 135, 0, 50)
+flyButton.Font = Enum.Font.FredokaOne
+flyButton.Text = "fly"
+flyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+flyButton.TextSize = 41.000
+
+UICorner_2.Parent = flyButton
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.244318172, 0, 0.154798761, 0)
+TextLabel_2.Size = UDim2.new(0, 112, 0, 60)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Welcome"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 37.000
+TextLabel_2.TextWrapped = true
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+TextBox.BorderColor3 = Color3.fromRGB(67, 67, 67)
+TextBox.Position = UDim2.new(0.244318187, 0, 0.32198143, 0)
+TextBox.Size = UDim2.new(0, 112, 0, 45)
+TextBox.Font = Enum.Font.FredokaOne
+TextBox.Text = "Kskrooeo"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 30.000
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.020833334, 0, 0.198142409, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=10230022647"
+
+UICorner_3.CornerRadius = UDim.new(0, 100)
+UICorner_3.Parent = ImageLabel
+
+NoClip.Name = "NoClip"
+NoClip.Parent = Frame
+NoClip.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+NoClip.Position = UDim2.new(0.694007635, 0, 0.421052635, 0)
+NoClip.Size = UDim2.new(0, 134, 0, 50)
+NoClip.Font = Enum.Font.FredokaOne
+NoClip.Text = "No Clip"
+NoClip.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.TextSize = 38.000
+
+UICorner_4.Parent = NoClip
+
+HeadlessButton.Name = "Headless Button"
+HeadlessButton.Parent = Frame
+HeadlessButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+HeadlessButton.Position = UDim2.new(0.694007635, 0, 0.622291028, 0)
+HeadlessButton.Size = UDim2.new(0, 133, 0, 50)
+HeadlessButton.Font = Enum.Font.FredokaOne
+HeadlessButton.Text = "Headless"
+HeadlessButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+HeadlessButton.TextSize = 35.000
+
+UICorner_5.Parent = HeadlessButton
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+TextLabel_3.BorderColor3 = Color3.fromRGB(91, 91, 91)
+TextLabel_3.Position = UDim2.new(0.289772719, 0, 0.826625407, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Most Stuff dosent work but no clip dose. Expect updates soon bc roblox PATCHED this script"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+-- Scripts:
+
+local function QGMD_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(QGMD_fake_script)()
+local function ICWBI_fake_script() -- NoClip.LocalScript 
+	local script = Instance.new('LocalScript', NoClip)
+
+	local keys = {
+		LeftShift = false,
+	}
+	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+		if key == "0" then
+			keys.LeftShift = true
+		end
+	end)
+	game.Players.LocalPlayer:GetMouse().KeyUp:Connect(function(key)
+		if key == "0" then
+			keys.LeftShift = false
+		end
+	end)
+	local hack = false
+	script.Parent.MouseButton1Click:Connect(function()
+		hack = not hack
+		if hack then
+			script.Parent.Text = "NoClip"
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			local humanoid = nil
+			while hack do
+				local fps = game["Run Service"].RenderStepped:Wait()
+				if not humanoid or not humanoid.Parent or not humanoid.Parent.Parent then
+					if game.Players.LocalPlayer.Character then
+						if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+							humanoid = game.Players.LocalPlayer.Character.Humanoid
+							if humanoid.RootPart then
+								humanoid.RootPart.Anchored = true
+							end
+						end
+					end
+				else
+					if humanoid.RootPart then
+						humanoid.RootPart.Anchored = true
+						local vel = humanoid.MoveDirection*humanoid.WalkSpeed
+						if humanoid.Jump then
+							vel = vel+Vector3.new(0,humanoid.WalkSpeed,0)
+						end
+						if keys.LeftShift then
+							vel = vel+Vector3.new(0,-humanoid.WalkSpeed,0)
+						end
+						humanoid.RootPart.Velocity = ((humanoid.RootPart.Velocity-vel)*(0.75^(30/(1/fps))))+vel
+						humanoid.RootPart.CFrame = (humanoid.RootPart.CFrame+(humanoid.RootPart.Velocity*fps))*CFrame.Angles(humanoid.RootPart.RotVelocity.X*fps,humanoid.RootPart.RotVelocity.Y*fps,humanoid.RootPart.RotVelocity.Z*fps)
+					end
+				end
+			end
+		else
+			script.Parent.Text = "NoClip"
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			game["Run Service"].RenderStepped:Wait()
+			game["Run Service"].RenderStepped:Wait()
+			if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") and game.Players.LocalPlayer.Character.Humanoid.RootPart then
+				game.Players.LocalPlayer.Character.Humanoid.RootPart.Anchored = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(ICWBI_fake_script)()
+local function HYHOOWX_fake_script() -- HeadlessButton.LocalScript 
+	local script = Instance.new('LocalScript', HeadlessButton)
+
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	local Count = 0
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		Count += 1
+		if Count % 2 == 0 then 
+			ReplicatedStorage.ApplyCharacterDescription:FireServer("Headless")
+		else
+			ReplicatedStorage.ApplyCharacterDescription:FireServer("Normal")
+		end
+	end)
+	
+end
+coroutine.wrap(HYHOOWX_fake_script)()
